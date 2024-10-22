@@ -1,10 +1,12 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {settingsSlice} from "../state/business-table/settings-slice.js";
+import settingsReducer from "../state/product/settings-slice";
+import productReducer from "../state/product/product-slice";
 
 export default configureStore({
 
     reducer: {
-        settings: settingsSlice
+        settings: settingsReducer,
+        product: productReducer
     }
 
 })

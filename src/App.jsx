@@ -1,8 +1,9 @@
+import ProductList from "./pages/product-list.jsx";
 
 const App = () => {
     return (
         <div>
-            Home
+            <ProductList/>
         </div>
     );
 };
